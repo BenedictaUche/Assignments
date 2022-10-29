@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS-Grid</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+  <style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 75%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 200px 80px 100px 50px 60px;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+  }
+    
+    .box1 {
+      background-color: #eb5020;
+      grid-column-start: 1;
+      grid-column-end: 3;
+  }
+    .box2 {
+      background-color: #ffa401;
+  }
+    .box3 {
+      background-color: #05aa42;
+      grid-column: 1 / 2;
+      grid-row-start: 2;
+      grid-row-end: 4;
+  }
+    .box4 {
+      background-color: #01aefd;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      
+  }
+    .box5 {
+      background-color: #01aefd;
+      grid-column-start: 2;
+      grid-column-end: 4;
+  }
+    
+  </style>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+    </div>
+   </body>
+</html>
