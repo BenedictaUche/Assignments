@@ -1,3 +1,3 @@
-## Portfolio and Forms Project
+## Image Slider project
 
-#Week 3 project
+#Week 6 project
